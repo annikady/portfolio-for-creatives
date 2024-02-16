@@ -331,6 +331,17 @@ a:active {
   width: 3rem;
 }
 
+.wordmark {
+  fill: rgb(125, 27, 0);
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.wordmark:hover {
+  fill: rgb(255, 130, 10);
+}
+
+
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
