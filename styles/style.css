@@ -317,8 +317,11 @@ a:active {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  /* background: url(../assets/dog-creek-cellars-wine/AY-front-and-back-.jpg); */
+  background: url(../assets/website-background.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
+
 
 .branding-navigation {
   display: flex;
