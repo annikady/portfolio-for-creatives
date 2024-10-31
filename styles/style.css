@@ -90,10 +90,10 @@ html {
   --overlay-color: #5200ff;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
+  --hyperlink-color: rgb(255, 130, 10);
   --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
-  --visited-color: #5200ff;
+  --hover-color: rgb(91, 20, 0);
+  --visited-color: rgb(255, 130, 10);
   --project-title-color: rgb(125, 27, 0);
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: rgb(125, 27, 0);
@@ -243,18 +243,18 @@ a:active {
   /* Tap on mobile */
 }
 
-.navigation-arrow {
+a.navigation-arrow {
   color: var(--alt-background-color);
 }
 
-.navigation-arrow:link {
+a.navigation-arrow:link {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
+  -webkit-text-stroke-color: black;
+  color: black;
 }
 
-.navigation-arrow:active,
-.navigation-arrow:hover {
+a.navigation-arrow:active,
+a.navigation-arrow:hover {
   color: var(--accent-color);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--accent-color);
@@ -297,7 +297,7 @@ a:active {
 }
 
 .project-description {
-  font-size: 1.225rem;
+  font-size: 1.625rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -495,9 +495,10 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 40vh;
   background: var(--background-color-footer);
   padding: 1rem;
+  border-top: 2px solid rgb(255, 221, 190);
 }
 
 .footer-item-1 {
