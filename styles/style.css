@@ -70,36 +70,36 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface:  "Outfit", sans-serif;
-  --heading-typeface: "Outfit", sans-serif;
-  --project-title-typeface:  "Outfit", sans-serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;    
+  --body-typeface:  "Instrument", sans-serif;
+  --heading-typeface: "Instrument", serif;
+  --project-title-typeface:  "Instrument", serif;
+  --background-color: #E5EFFD;
+  --background-color-about: #E5EFFD;
+  --background-color-footer: #E5EFFD;    
   --alt-background-color: #000000;
-  --background-color-holding-page: rgb(125, 27, 0);
-  --h1-color: rgb(125, 27, 0);
-  --h2-color: rgb(125, 27, 0);
-  --h3-color: rgb(125, 27, 0);
-  --h4-color: rgb(125, 27, 0);
-  --h5-color: rgb(125, 27, 0);
-  --h6-color: rgb(125, 27, 0);
-  --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: rgb(125, 27, 0);
-  --overlay-color: rgb(125, 27, 0);
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
-  --hyperlink-color: rgb(255, 130, 10);
-  --hyperlink-alternate-color: orangered;
-  --hover-color:  rgb(255, 130, 10);
-  --visited-color: rgb(125, 27, 0);
-  --project-title-color: rgb(125, 27, 0);
+  --background-color-holding-page: rgb(4, 38, 84, 100);
+  --h1-color: rgb(4, 38, 84, 100);
+  --h2-color: rgb(4, 38, 84, 100);
+  --h3-color: rgb(4, 38, 84, 100);
+  --h4-color: rgb(4, 38, 84, 100);
+  --h5-color: rgb(4, 38, 84, 100);
+  --h6-color: rgb(4, 38, 84, 100);
+  --primary-text-color: rgb(4, 38, 84, 100);
+  --holding-page-title-color: #E5EFFD;
+  --accent-color: rgb(41, 112, 211, 100);
+  --overlay-color: rgb(4, 38, 84, 100);
+  --overlay-title-color: #E5EFFD;
+  --overlay-description-color: #E5EFFD;
+  --hyperlink-color: rgb(4, 38, 84, 100);
+  --hyperlink-alternate-color: darkblue;
+  --hover-color:  rgb(2, 15, 33);
+  --visited-color: #6a5acd;
+  --project-title-color: rgb(4, 38, 84, 100);
   --project-sidebar-background-color: transparent;
-  --project-sidebar-text-color: rgb(125, 27, 0);
+  --project-sidebar-text-color: rgb(4, 38, 84, 100);
   --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: rgb(255, 130, 10);
+  --holding-page-footer-color: #E5EFFD;
+  --text-selection-background-color: rgb(41, 112, 211, 100);
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
@@ -120,6 +120,7 @@ body {
 
 ::selection {
   background: var(--accent-color);
+  color: #ffffff; /* or another light color for contrast */
 }
 
 /* Make all images responsive */
@@ -318,9 +319,9 @@ a.navigation-arrow:hover {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background: url(../assets/website-background.jpg);
+  /* background: url(../assets/website-background.jpg);
   background-repeat: no-repeat; 
-  background-size: cover; 
+  background-size: cover; */
 }
 
 
@@ -337,13 +338,13 @@ a.navigation-arrow:hover {
 }
 
 .wordmark {
-  fill: rgb(125, 27, 0);
+  fill: rgb(41, 112, 211, 100);
   transition: 200ms;
   transition-timing-function: ease-in-out;
 }
 
 .wordmark:hover {
-  fill: rgb(255, 130, 10);
+  fill: rgb(4, 38, 84, 100);
 }
 
 
@@ -410,6 +411,8 @@ a.navigation-arrow:hover {
   width: 100%;
   height: auto;
   position: relative;
+  border-radius: 12px; /* adjust the value to make corners more or less rounded */
+  overflow: hidden;    /* ensures the rounding clips the image edges */
   /* Required to contain overlay size */
 }
 
@@ -872,12 +875,14 @@ a.sub-navigation-link:hover {
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 8rem;
+    padding: 4rem 14rem;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
