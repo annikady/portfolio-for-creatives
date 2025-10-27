@@ -71,7 +71,7 @@ html {
 
 :root {
   --body-typeface:  "Instrument", sans-serif;
-  --heading-typeface: "Instrument", serif;
+  --heading-typeface: "Instrument Serif", serif;
   --project-title-typeface:  "Instrument", serif;
   --background-color: #E5EFFD;
   --background-color-about: #E5EFFD;
@@ -158,6 +158,8 @@ h2 {
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
+  line-height: 1.5; /* increase this number for more spacing */
+
 }
 
 h3 {
@@ -352,10 +354,10 @@ a.navigation-arrow:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;   /* aligns items to the left */
+  justify-content: center;   /* keeps vertical centering */
   padding: 2rem 4rem;
-  text-align: center;
+  text-align: left;          /* aligns text inside elements to the left */
 }
 
 .hero-icon {
@@ -855,7 +857,7 @@ a.sub-navigation-link:hover {
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -875,9 +877,17 @@ a.sub-navigation-link:hover {
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 14rem;
+    padding: 4rem 22rem;
   }
-
+.hero-name {
+  font-size: 7rem; /* bigger than your regular h1 */
+  font-family: var(--heading-typeface);
+  font-weight: 400; /* bold */
+  text-align: center;
+  color: var(--h1-color); /* or another color if you want */
+  margin: 0.5rem 0;
+  line-height: 1.1;
+}
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
