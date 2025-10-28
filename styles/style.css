@@ -303,6 +303,14 @@ a.navigation-arrow:hover {
   margin-left: 1.2rem;
 }
 
+.socials-list {
+  display: flex;      /* makes the list horizontal */
+  gap: 1rem;          /* space between icons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .project-description {
   font-size: 1.625rem;
   line-height: 1.2;
@@ -333,10 +341,17 @@ a.navigation-arrow:hover {
 
 .branding-navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
-  align-items: flex-start;
+  align-items: center;
+  padding: 4rem;
+}
+
+.branding-navigation .nav-left,
+.branding-navigation .nav-center,
+.branding-navigation .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* spacing between items */
 }
 
 .logo {
