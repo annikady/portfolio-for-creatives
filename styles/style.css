@@ -211,14 +211,14 @@ em {
 
 .project-title {
   font-size: 3.725rem;
-  font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
 }
 
 .overlay-title {
-  font-size: 2.875rem;
+  font-size: 1.875rem;
   color: var(--overlay-title-color);
+  text-align: center;
 }
 
 .overlay-description {
@@ -312,7 +312,7 @@ a.navigation-arrow:hover {
 }
 
 .project-description {
-  font-size: 1.625rem;
+  font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -338,6 +338,63 @@ a.navigation-arrow:hover {
   background-size: cover; */
 }
 
+.hero-circular-animation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero-circular-animation .circle {
+  animation: spin 20s linear infinite;
+  transform-origin: center;
+  position: absolute;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-circular-animation .tick-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 0 20px rgba(174, 108, 255, 0.4));
+}
+
+.hero-circular-animation .blob-background {
+  position: absolute;
+  inset: 0;
+  background: url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true), radial-gradient(circle, #ae6cff 0%, #a7adff 100%);
+  background-blend-mode: overlay;
+  border-radius: 50%;
+}
+
+.hero-circular-animation .tick-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-circular-animation .tick-icon svg {
+  transition: transform 0.3s ease;
+}
+
+.hero-circular-animation .tick-container:hover .tick-icon svg {
+  transform: scale(1.1);
+}
+
+.tick-icon svg {
+  stroke: #E5EFFD; /* makes the outline and checkmark white too */
+}
 
 .branding-navigation {
   display: flex;
@@ -367,7 +424,6 @@ a.navigation-arrow:hover {
 .wordmark:hover {
   fill: rgb(4, 38, 84, 100);
 }
-
 
 .hero-headline-wrapper {
   display: flex;
@@ -523,6 +579,7 @@ a.navigation-arrow:hover {
   background: var(--background-color-footer);
   padding: 1rem;
   border-top: 2px solid rgb(255, 221, 190);
+  margin: 3rem;
 }
 
 .footer-item-1 {
