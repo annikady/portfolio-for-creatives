@@ -960,7 +960,7 @@ a.sub-navigation-link:hover {
   font-family: var(--heading-typeface);
   font-weight: 400; /* bold */
   text-align: center;
-  color: var(--h1-color); /* or another color if you want */
+  color: #9E4FFF; 
   margin: 0.5rem 0;
   line-height: 1.1;
 }
