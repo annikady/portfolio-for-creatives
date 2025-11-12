@@ -354,6 +354,7 @@ a.navigation-arrow:hover {
   animation: spin 20s linear infinite;
   transform-origin: center;
   position: absolute;
+  z-index: index 20;
 }
 
 @keyframes spin {
@@ -382,6 +383,7 @@ a.navigation-arrow:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: index 20;
 }
 
 .hero-circular-animation .tick-icon svg {
