@@ -10,8 +10,7 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 
 /*
 
@@ -26,10 +25,11 @@ Imported stylesheets. Remove the ones you do not want to use.
 */
 
 /* @import url('make-something-fly.css'); */
-@import url('animated-gradient.css');
-@import url('text-stroke.css');
-@import url('stroke-shadow.css');
-@import url('scroll-to-top.css');
+@import url("animated-gradient.css");
+@import url("text-stroke.css");
+@import url("stroke-shadow.css");
+@import url("scroll-to-top.css");
+@import url("marquee.css");
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -70,12 +70,12 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface:  "Instrument", sans-serif;
+  --body-typeface: "Instrument", sans-serif;
   --heading-typeface: "Instrument Serif", serif;
-  --project-title-typeface:  "Instrument", serif;
-  --background-color: #E5EFFD;
-  --background-color-about: #E5EFFD;
-  --background-color-footer: #E5EFFD;    
+  --project-title-typeface: "Instrument", serif;
+  --background-color: #e5effd;
+  --background-color-about: #e5effd;
+  --background-color-footer: #e5effd;
   --alt-background-color: #000000;
   --background-color-holding-page: rgb(4, 38, 84, 100);
   --h1-color: rgb(4, 38, 84, 100);
@@ -85,27 +85,26 @@ html {
   --h5-color: rgb(4, 38, 84, 100);
   --h6-color: rgb(4, 38, 84, 100);
   --primary-text-color: rgb(4, 38, 84, 100);
-  --holding-page-title-color: #E5EFFD;
+  --holding-page-title-color: #e5effd;
   --accent-color: rgb(41, 112, 211, 100);
   --overlay-color: rgb(4, 38, 84, 100);
-  --overlay-title-color: #E5EFFD;
-  --overlay-description-color: #E5EFFD;
+  --overlay-title-color: #e5effd;
+  --overlay-description-color: #e5effd;
   --hyperlink-color: rgb(4, 38, 84, 100);
   --hyperlink-alternate-color: darkblue;
-  --hover-color:  rgb(2, 15, 33);
+  --hover-color: rgb(2, 15, 33);
   --visited-color: #6a5acd;
   --project-title-color: rgb(4, 38, 84, 100);
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: rgb(4, 38, 84, 100);
   --heart-color: darkred;
-  --holding-page-footer-color: #E5EFFD;
+  --holding-page-footer-color: #e5effd;
   --text-selection-background-color: rgb(41, 112, 211, 100);
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
-
 
 body {
   font-family: var(--body-typeface);
@@ -134,8 +133,6 @@ svg {
   /* This is optional. Also try cover or leave out entirely. */
 }
 
-
-
 /* Global & Mobile Typography 
 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
@@ -159,7 +156,6 @@ h2 {
   margin-bottom: 1rem;
   color: var(--h2-color);
   line-height: 1.1; /* increase this number for more spacing */
-
 }
 
 h3 {
@@ -169,8 +165,8 @@ h3 {
   line-height: 1.3;
   color: var(--h3-color);
   border-bottom: 1px solid rgb(4, 38, 84, 100); /* line under the text */
-  padding-bottom: 1.5rem;    
-  width: 100%;     
+  padding-bottom: 1.5rem;
+  width: 100%;
 }
 
 h4 {
@@ -202,7 +198,7 @@ em {
 }
 
 .fineprint {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .hero-headline {
@@ -224,7 +220,6 @@ em {
 .overlay-description {
   color: var(--overlay-description-color);
 }
-
 
 /* Hyperlink Styles */
 
@@ -278,8 +273,6 @@ a.navigation-arrow:hover {
   background-position: center center;
 }
 
-
-
 .heart {
   color: var(--heart-color);
 }
@@ -304,8 +297,8 @@ a.navigation-arrow:hover {
 }
 
 .socials-list {
-  display: flex;      /* makes the list horizontal */
-  gap: 1rem;          /* space between icons */
+  display: flex; /* makes the list horizontal */
+  gap: 1rem; /* space between icons */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -316,8 +309,6 @@ a.navigation-arrow:hover {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-
-
 
 /* Hero 
 
@@ -349,7 +340,6 @@ a.navigation-arrow:hover {
   justify-content: center;
 }
 
-
 .hero-circular-animation .circle {
   animation: spin 20s linear infinite;
   transform-origin: center;
@@ -358,8 +348,12 @@ a.navigation-arrow:hover {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-circular-animation .tick-container {
@@ -372,7 +366,8 @@ a.navigation-arrow:hover {
 .hero-circular-animation .blob-background {
   position: absolute;
   inset: 0;
-  background: url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true), radial-gradient(circle, #ae6cff 0%, #a7adff 100%);
+  background: url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true),
+    radial-gradient(circle, #ae6cff 0%, #a7adff 100%);
   background-blend-mode: overlay;
   border-radius: 50%;
 }
@@ -395,7 +390,7 @@ a.navigation-arrow:hover {
 }
 
 .tick-icon svg {
-  stroke: #E5EFFD; /* makes the outline and checkmark white too */
+  stroke: #e5effd; /* makes the outline and checkmark white too */
 }
 
 .branding-navigation {
@@ -431,10 +426,10 @@ a.navigation-arrow:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: flex-start;   /* aligns items to the left */
-  justify-content: center;   /* keeps vertical centering */
+  align-items: flex-start; /* aligns items to the left */
+  justify-content: center; /* keeps vertical centering */
   padding: 2rem 4rem;
-  text-align: left;          /* aligns text inside elements to the left */
+  text-align: left; /* aligns text inside elements to the left */
 }
 
 .hero-icon {
@@ -455,9 +450,6 @@ a.navigation-arrow:hover {
   padding: 1rem;
 }
 
-
-
-
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -475,7 +467,7 @@ a.navigation-arrow:hover {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 /* Defining the work page grid */
@@ -491,7 +483,7 @@ a.navigation-arrow:hover {
   height: auto;
   position: relative;
   border-radius: 12px; /* adjust the value to make corners more or less rounded */
-  overflow: hidden;    /* ensures the rounding clips the image edges */
+  overflow: hidden; /* ensures the rounding clips the image edges */
   /* Required to contain overlay size */
 }
 
@@ -512,16 +504,13 @@ a.navigation-arrow:hover {
   flex-direction: column;
   padding: 1em;
   background-color: var(--overlay-color);
-  transition: opacity .3s, visibility .3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .work-page-grid-item:hover .overlay {
   visibility: visible;
-  opacity: .8;
+  opacity: 0.8;
 }
-
-
-
 
 /* 
 
@@ -572,7 +561,6 @@ a.navigation-arrow:hover {
                                                    
 */
 
-
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -607,7 +595,6 @@ a.navigation-arrow:hover {
 .awards-list {
   margin-bottom: 2rem;
 }
-
 
 /* Project Page 
 
@@ -663,8 +650,6 @@ a.navigation-arrow:hover {
   justify-content: center;
 }
 
-
-
 .text-section {
   width: 100%;
 }
@@ -687,10 +672,6 @@ a.navigation-arrow:hover {
       var(--linear-gradient-color-3) 100%); */
 }
 
-
-
-
-
 /* 
 
 ██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
@@ -710,8 +691,11 @@ a.navigation-arrow:hover {
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)),
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
     url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
@@ -733,7 +717,7 @@ a.navigation-arrow:hover {
 }
 
 .holding-page-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--holding-page-footer-color);
   margin-bottom: 0;
 }
@@ -751,7 +735,6 @@ a.navigation-arrow:hover {
   padding: 3rem;
 }
 
-
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -767,7 +750,7 @@ a.navigation-arrow:hover {
 }
 
 .error-page-wrapper {
-  display:grid;
+  display: grid;
   place-items: center;
 }
 
@@ -794,7 +777,8 @@ a.navigation-arrow:hover {
   place-items: center;
 }
 
-.play-page-wrapper {}
+.play-page-wrapper {
+}
 
 .play-page-inner-container {
   text-align: center;
@@ -804,7 +788,6 @@ a.navigation-arrow:hover {
   color: var(--accent-color);
 }
 
-
 /*
 ███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
 ██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
@@ -812,7 +795,6 @@ a.navigation-arrow:hover {
 ██       ██ ██  ██      ██      ██   ██ ██ ██  ██  ██ ██      ██  ██ ██    ██         ██ 
 ███████ ██   ██ ██      ███████ ██   ██ ██ ██      ██ ███████ ██   ████    ██    ███████ 
 */
-
 
 .experiments-page {
   display: grid;
@@ -857,7 +839,8 @@ a.navigation-arrow:hover {
   text-align: center;
 }
 
-.sub-navigation-item {}
+.sub-navigation-item {
+}
 
 a.sub-navigation-link {
   border: 1px solid var(--accent-color);
@@ -910,7 +893,6 @@ a.sub-navigation-link:hover {
   }
 }
 
-
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
@@ -921,15 +903,14 @@ a.sub-navigation-link:hover {
 
 */
 
-
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-
   .holding-page-title {
     font-size: 2rem;
   }
@@ -957,15 +938,15 @@ a.sub-navigation-link:hover {
   .hero-headline-wrapper {
     padding: 4rem 22rem;
   }
-.hero-name {
-  font-size: 7rem; /* bigger than your regular h1 */
-  font-family: var(--heading-typeface);
-  font-weight: 400; /* bold */
-  text-align: center;
-  color: #9E4FFF; 
-  margin: 0.5rem 0;
-  line-height: 1.1;
-}
+  .hero-name {
+    font-size: 7rem; /* bigger than your regular h1 */
+    font-family: var(--heading-typeface);
+    font-weight: 400; /* bold */
+    text-align: center;
+    color: #9e4fff;
+    margin: 0.5rem 0;
+    line-height: 1.1;
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
@@ -978,8 +959,8 @@ a.sub-navigation-link:hover {
     filter: grayscale(100);
   }
 
-  .work-page-grid-item>a.grayscale:active img,
-  .work-page-grid-item>a.grayscale:hover img {
+  .work-page-grid-item > a.grayscale:active img,
+  .work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -995,7 +976,7 @@ a.sub-navigation-link:hover {
 
   .about-item-1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2; 
+    grid-row: 1 / 2;
   }
 
   .footer-item-1 {
@@ -1046,7 +1027,6 @@ a.sub-navigation-link:hover {
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
@@ -1080,18 +1060,16 @@ a.sub-navigation-link:hover {
   .arrow {
     padding-right: 1rem;
   }
-
-
 }
-
 
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
-
 /* X-Large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
