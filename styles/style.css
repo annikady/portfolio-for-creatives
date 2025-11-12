@@ -332,12 +332,13 @@ a.navigation-arrow:hover {
 .hero-circular-animation {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 10%;
   width: 150px;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 .hero-circular-animation .circle {
@@ -395,21 +396,26 @@ a.navigation-arrow:hover {
 
 .branding-navigation {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 4rem;
 }
 
-.branding-navigation .nav-left,
-.branding-navigation .nav-center,
-.branding-navigation .nav-right {
+.large-menu {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 2rem; /* spacing between items */
+  justify-content: space-between;
+  width: 20rem;
+}
+.right {
+  text-align: right;
 }
 
 .logo {
-  width: 3rem;
+  width: 5rem;
+  margin-bottom: 1rem;
 }
 
 .wordmark {
@@ -927,8 +933,12 @@ a.sub-navigation-link:hover {
     font-size: 1.625rem;
   }
 
+  .branding-navigation {
+    flex-direction: row;
+  }
+
   .logo {
-    width: 5rem;
+    width: 6rem;
   }
 
   .hero {
