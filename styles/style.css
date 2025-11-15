@@ -76,7 +76,7 @@ html {
   --background-color: #e5effd;
   --background-color-about: #e5effd;
   --background-color-footer: #e5effd;
-  --alt-background-color: #000000;
+  --alt-background-color: 042654;
   --background-color-holding-page: rgb(4, 38, 84, 100);
   --h1-color: rgb(4, 38, 84, 100);
   --h2-color: rgb(4, 38, 84, 100);
@@ -103,7 +103,7 @@ html {
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
-  --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --stroke-shadow-color: 042654;
 }
 
 body {
