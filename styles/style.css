@@ -70,9 +70,9 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Instrument", sans-serif;
+  --body-typeface: "Instrument Sans", sans-serif;
   --heading-typeface: "Instrument Serif", serif;
-  --project-title-typeface: "Instrument", serif;
+  --project-title-typeface: "Instrument Serif", serif;
   --background-color: #e5effd;
   --background-color-about: #e5effd;
   --background-color-footer: #e5effd;
@@ -324,9 +324,11 @@ a.navigation-arrow:hover {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  /* background: url(../assets/website-background.jpg);
-  background-repeat: no-repeat; 
-  background-size: cover; */
+  background-image: url("/assets/annika-yi-portfolio-website-background-image-clouds-during-sunset.jpg");
+  background-size: cover;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-circular-animation {
@@ -574,8 +576,13 @@ a.navigation-arrow:hover {
   min-height: 40vh;
   background: var(--background-color-footer);
   padding: 1rem;
-  border-top: 2px solid rgb(255, 221, 190);
   margin: 3rem;
+}
+
+.footer-title {
+  text-align: center; /* or left/right depending on your design */
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer-item-1 {
