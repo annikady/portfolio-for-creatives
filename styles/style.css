@@ -575,8 +575,13 @@ a.navigation-arrow:hover {
   grid-gap: 3rem;
   min-height: 40vh;
   background: var(--background-color-footer);
-  padding: 1rem;
-  margin: 3rem;
+
+  background-image: url("/assets/annika-yi-portfolio-website-background-image-clouds-during-sunset.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  background-position: center 80%;
 }
 
 .footer-title {
@@ -989,6 +994,7 @@ a.sub-navigation-link:hover {
   .global-footer {
     padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 6rem;
   }
 
   .about-item-1 {
