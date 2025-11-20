@@ -166,7 +166,6 @@ h3 {
   color: var(--h3-color);
   border-bottom: 1px solid rgb(4, 38, 84, 100); /* line under the text */
   padding-bottom: 1.5rem;
-  width: 100%;
 }
 
 h4 {
@@ -588,32 +587,27 @@ a.navigation-arrow:hover {
 .footer-title {
   grid-column: 1/2;
   grid-row: 1/2;
-  background: limegreen;
   font-size: 2rem;
 }
 
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background: red;
 }
 
 .footer-item-2 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  background: goldenrod;
 }
 
 .footer-item-3 {
   grid-column: 1 / 2;
   grid-row: 4/ 5;
-  background: lightblue;
 }
 
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  background: oldlace;
 }
 
 .awards-list {
@@ -967,6 +961,7 @@ a.sub-navigation-link:hover {
 
   h1 {
     font-size: 4rem;
+    text-align: left;
   }
 
   h2 {
@@ -1098,7 +1093,6 @@ a.sub-navigation-link:hover {
     position: sticky;
     top: 5vh;
     padding-right: 2rem;
-    background: lawngreen;
   }
 
   /* Main Project Image Area on Large Devices */
