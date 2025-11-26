@@ -1,75 +1,4 @@
 /* -----------------------------------------------------
-   Import a clean sans-serif font
------------------------------------------------------ */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-
-/* -----------------------------------------------------
-   Basic Reset & Global Styles
------------------------------------------------------ */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background: #faf9f6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  color: #333;
-}
-
-/* -----------------------------------------------------
-   Main Content Area (above the marquee)
------------------------------------------------------ */
-main {
-  flex: 1;
-  padding: 2rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.explanation {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #e9f7fe;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-.bulleted {
-  list-style: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.highlight {
-  background-color: #fffbdd;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-.featured-note {
-  text-align: center;
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin: 0 auto 1rem;
-  display: inline-block;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* -----------------------------------------------------
    Marquee Structure (Footer)
 ----------------------------------------------------- */
 
@@ -87,10 +16,9 @@ h1 {
 
 /* The moving "track" that slides left to right */
 .marquee__track {
-  display: flex;
-  flex-shrink: 0;
+  display: inline-flex;
   white-space: nowrap;
-  animation: marquee-scroll 20s linear infinite;
+  animation: marquee-scroll 60s linear infinite;
 }
 
 /* Animation: moves the track smoothly across the screen */

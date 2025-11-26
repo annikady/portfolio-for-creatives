@@ -196,6 +196,9 @@ em {
   font-style: italic;
 }
 
+.red {
+  color: red;
+}
 .fineprint {
   font-size: 0.875rem;
 }
