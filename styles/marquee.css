@@ -8,8 +8,7 @@
   width: 100%;
   min-height: 20vh;
   overflow: hidden;
-  background: #fff;
-  border-top: 3px solid #e9f7fe;
+  background: #e5effd;
   display: flex;
   align-items: center;
 }
