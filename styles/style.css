@@ -670,7 +670,7 @@ a.navigation-arrow:hover {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
+  /* min-height: 20vh;*/
   /* min-height should be deleted if you want to remove space between project images on project pages */
   display: flex;
   align-items: center;
@@ -1109,7 +1109,7 @@ a.sub-navigation-link:hover {
   }
 
   .project-image {
-    min-height: 70vh;
+    /*min-height: 70vh;*/
     /* This should be deleted if you want to remove space between project images on project pages */
   }
 
