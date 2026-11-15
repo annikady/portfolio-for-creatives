@@ -335,16 +335,14 @@ a.navigation-arrow:hover {
 
 .hero-circular-animation {
   position: absolute;
-  bottom: 20px;
+  top: 25%;
   right: 10%;
   width: 150px;
   height: 150px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  top: 72%;
-  bottom: 52%;
 }
 
 .hero-circular-animation .circle {
