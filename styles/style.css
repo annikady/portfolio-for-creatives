@@ -540,7 +540,6 @@ a.navigation-arrow:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  background: var(--background-color-about);
   padding: 1rem;
   flex: 1;
 }
@@ -563,6 +562,14 @@ a.navigation-arrow:hover {
 .about-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+}
+
+.about-page {
+  background-image: url("/assets/annika-yi-portfolio-website-background-image-clouds-during-sunset.jpg");
+  background-size: cover;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Global Footer
