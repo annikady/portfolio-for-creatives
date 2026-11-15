@@ -339,7 +339,7 @@ a.navigation-arrow:hover {
   right: 10%;
   width: 150px;
   height: 150px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 10;
@@ -373,7 +373,8 @@ a.navigation-arrow:hover {
 .hero-circular-animation .blob-background {
   position: absolute;
   inset: 0;
-  background: url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true),
+  background:
+    url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true),
     radial-gradient(circle, #ae6cff 0%, #a7adff 100%);
   background-blend-mode: overlay;
   border-radius: 50%;
@@ -516,7 +517,9 @@ a.navigation-arrow:hover {
   flex-direction: column;
   padding: 1em;
   background-color: var(--overlay-color);
-  transition: opacity 0.3s, visibility 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
 
 .work-page-grid-item:hover .overlay {
@@ -590,8 +593,8 @@ a.navigation-arrow:hover {
 }
 
 .footer-title {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   font-size: 2rem;
 }
 
@@ -609,16 +612,15 @@ a.navigation-arrow:hover {
 
 .footer-item-3 {
   grid-column: 1 / 2;
-  grid-row: 4/ 5;
+  grid-row: 4 / 5;
   margin-right: 1rem;
 }
 
 .footer-item-4 {
   grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   margin-right: 1rem;
 }
-
 .awards-list {
   margin-bottom: 2rem;
 }
@@ -743,7 +745,8 @@ a.navigation-arrow:hover {
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, 1),
       var(--background-color-holding-page)
